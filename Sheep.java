@@ -32,7 +32,7 @@ private String name;
         return "Sheep";
 
     }
-// Getters and setters for the properties
+// Getters and setters
 public Integer getLegs() {
     return legs;
 }

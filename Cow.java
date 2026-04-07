@@ -23,7 +23,7 @@ public String getType() {
     return "Cow";
 }
 
-//setters and getters for the properties
+//setters and getters
 public Integer getLegs() {
     return legs;
 }

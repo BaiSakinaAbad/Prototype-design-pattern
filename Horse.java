@@ -13,7 +13,7 @@ private String color;
         this.legs = 4;
         this.sound = "Baa";
         this.food = "Grass";
-        this.color = "Pejaaaaa";
+        this.color = "";
     }
 
     public Horse(Horse horse) {
@@ -35,7 +35,7 @@ public void makeSound() {
 public String getType() {
     return "Horse";
 }
-//setters and getters for the properties
+//setters and getters 
 public Integer getLegs() {
     return legs;
 }
