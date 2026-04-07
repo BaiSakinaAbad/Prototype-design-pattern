@@ -8,28 +8,34 @@ public class Test{
         ((Sheep) sheep).setName("Saira");
         ((Cow) cow).setSound("Moooooo");
         ((Horse) horse).setColor("Blonde");
+        ((Cow) cow).setFood("Grass");
+        ((Cow) cow).setLegs(4);
 
         // sheep
         System.out.print(((Sheep) sheep).getName() + " is a " + sheep.getType() + " that sounds like ");
         sheep.makeSound();
+        System.out.println("This sheep has " + ((Sheep) sheep).getLegs() + " legs and eats " + ((Sheep) sheep).getFood());
         System.out.println();
 
         // cow      
         System.out.println("This animal is a " + cow.getType() + " that eats " + ((Cow) cow).getFood() + " and sounds like ");
         cow.makeSound();
+        System.out.println("This cow has " + ((Cow) cow).getLegs() + " legs and eats " + ((Cow) cow).getFood());
         System.out.println();
 
         // horse
         System.out.print("This animal is a " + horse.getType() + " with color of " + ((Horse) horse).getColor() + " and sounds like ");
         horse.makeSound();
+        System.out.println("The Horse has " + ((Horse) horse).getLegs() + " legs and eats " + ((Horse) horse).getFood());
         System.out.println();
 
         // another sheep
         Animal anotherSheep = reg.createSheep();
         ((Sheep) anotherSheep).setName("Julia");   
-        System.out.println(((Sheep) anotherSheep).getName() + " is a " + anotherSheep.getType());
+        System.out.println(((Sheep) anotherSheep).getName() + " is another " + anotherSheep.getType());
         System.out.print(((Sheep) anotherSheep).getName() + " makes sounds ");
         anotherSheep.makeSound();
+        System.out.println(((Sheep) anotherSheep).getName() + " has " + ((Sheep) anotherSheep).getLegs() + " legs and eats " + ((Sheep) anotherSheep).getFood());
         System.out.println();
         
     }

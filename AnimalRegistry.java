@@ -4,9 +4,9 @@ public class AnimalRegistry{
     private Horse horseProto;
 
     public AnimalRegistry(){
-        sheepProto = new Sheep(null, null, null, null);
-        cowProto = new Cow(null, null, null);
-        horseProto = new Horse(null, null, null, null);
+        this.sheepProto = new Sheep();
+        this.cowProto = new Cow();
+        this.horseProto = new Horse();
     }
 
     public Animal createSheep() {
@@ -19,5 +19,15 @@ public class AnimalRegistry{
 
     public Animal createHorse() {
         return horseProto.clone();
+    }
+
+    public void setSheepProto(Sheep sheepProto) {
+        this.sheepProto = sheepProto;
+    }
+    public void setCowProto(Cow cowProto) {
+        this.cowProto = cowProto;
+    }
+    public void setHorseProto(Horse horseProto) {
+        this.horseProto = horseProto;
     }
 }

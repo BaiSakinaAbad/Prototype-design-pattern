@@ -4,21 +4,27 @@ private String sound;
 private String food;
 private String name;
 
-public Sheep(Integer legs, String sound, String food, String name){
-    this.legs = legs;
-    this.sound = sound;
-    this.food = food;
-    this.name = name;
-}
+  public Sheep() {
+        this.legs = 4;
+        this.sound = "baa... Baa... BAAAAAAA";
+        this.food = "Grass";
+        this.name = "";
+    }
 
+    public Sheep(Sheep sheep) {
+        this.legs = sheep.legs;
+        this.sound = sheep.sound;
+        this.food = sheep.food;
+        this.name = sheep.name;
+    }
     @Override
     public Animal clone() {
-        return new Sheep(legs, sound, food, name);
+        return new Sheep(this);
     }
 
     @Override
     public void makeSound() {
-        System.out.println("Baaaaaaa");
+        System.out.println(this.sound);
     }
 
     @Override

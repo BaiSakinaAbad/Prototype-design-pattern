@@ -8,15 +8,24 @@ private Integer legs;
 private String sound;
 private String food;
 private String color;
-public Horse(Integer legs, String sound, String food, String color){
-    this.legs = 4;
-    this.sound = "Neigh";
-    this.food = "Hay";
-    this.color = color;
-}
+
+  public Horse() {
+        this.legs = 4;
+        this.sound = "Baa";
+        this.food = "Grass";
+        this.color = "Pejaaaaa";
+    }
+
+    public Horse(Horse horse) {
+        this.legs = horse.legs;
+        this.sound = horse.sound;
+        this.food = horse.food;
+        this.color = horse.color;
+    }
+
 @Override
 public Animal clone() {
-    return new Horse(legs, sound, food, color);
+    return new Horse(this);
 }
 @Override
 public void makeSound() {

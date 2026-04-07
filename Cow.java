@@ -4,15 +4,15 @@ private Integer legs;
 private String sound;
 private String food;
 
-public Cow(Integer legs, String sound, String food){
-    this.legs = legs;
-    this.sound = sound;
-    this.food = food;
+public Cow(){
+    this.legs = 4;
+    this.sound = "Moo MOO MOOOOOO!";
+    this.food = "Grass";
 }
 
 @Override
 public Animal clone() {
-    return new Cow(legs, sound, food);
+    return new Cow();
 }
 @Override
 public void makeSound() {
