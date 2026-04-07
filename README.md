@@ -29,7 +29,8 @@ public Sheep(Sheep sheep) {
 ## Sample Output
 
 When you run the `Test.java` file:
-![result of Test.java](test.png)
+
+![result2](image.png)
 
 Each animal is created by **cloning** the prototype instead of calling the full constructor.
 

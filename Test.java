@@ -8,8 +8,8 @@ public class Test{
         ((Sheep) sheep).setName("Saira");
         ((Cow) cow).setSound("Moooooo");
         ((Horse) horse).setColor("Blonde");
-        ((Cow) cow).setFood("Grass");
-        ((Cow) cow).setLegs(4);
+        ((Cow) cow).setFood("Steak");
+      
 
         // sheep
         System.out.print(((Sheep) sheep).getName() + " is a " + sheep.getType() + " that sounds like ");
@@ -20,7 +20,7 @@ public class Test{
         // cow      
         System.out.println("This animal is a " + cow.getType() + " that eats " + ((Cow) cow).getFood() + " and sounds like ");
         cow.makeSound();
-        System.out.println("This cow has " + ((Cow) cow).getLegs() + " legs and eats " + ((Cow) cow).getFood());
+        System.out.println("This cow has " + ((Cow) cow).getLegs() + " legs.");
         System.out.println();
 
         // horse
